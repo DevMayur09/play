@@ -1,9 +1,9 @@
 import dotenv from 'dotenv'
-import httpClient from 'http'
-import { httpServer } from './app'
-import connectDb from './db/connectDb'
+import { httpServer } from './app.js'
+import connectDb from './db/connectDb.js'
 
-dotenv.config({path : './.env'})
+const evnvironment = dotenv.config({path : './.env'})
+console.log(evnvironment)
 
 
 const startServer = ()=>{
